@@ -1,5 +1,6 @@
 
-
+## permissions 
+gcloud auth configure-docker
 
 ## to build image locally
 template: docker build -t gcr.io/project_id/python-image:tag
@@ -21,7 +22,10 @@ docker push gcr.io/united-impact-363519/simple_app:v1.0.0
 docker run --platform linux/amd64 -d -p 8080:8080 --name simple-app-container gcr.io/united-impact-363519/simple_app:v1.0.0
 
 ## stop container
-docker stop
+docker stop <container name>
+
+# remove container
+docker rm <container name>
 
 # Skip building image locally
 gcloud builds submit --tag gcr.io/ProjectID/simple_app  --project=ProjectID

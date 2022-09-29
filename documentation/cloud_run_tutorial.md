@@ -9,3 +9,4 @@ gcloud run deploy --image gcr.io/united-impact-363519/simple_app:v1.0.0 --platfo
 ERROR: (gcloud.run.deploy) The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable. Logs for this revision might contain more information.
 
 solved by: 
+building image by specifying platform (I'm working on an M1 mac)
